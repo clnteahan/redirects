@@ -5,5 +5,6 @@ var id = url.split("?")[1]
 
 if (id == "rr") {
     document.getElementById("text").style.display = "none"
-    document.createElement('<video src="rolling.mp4"></video>')
+    var rr = document.createElement('video')
+    rr.src="rolling.mp4"
 }
