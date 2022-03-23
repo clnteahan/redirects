@@ -4,5 +4,6 @@ var url = document.URL
 var id = url.split("?")[1]
 
 if (id == "rr") {
-    document.createElement('<iframe src="https://redirect.colinteahan.dev/?rr"></iframe>')
+    document.getElementById("text").style.display = "none"
+    document.createElement('<iframe src="https://youtu.be/dQw4w9WgXcQ"></iframe>')
 }
