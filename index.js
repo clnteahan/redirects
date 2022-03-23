@@ -1,10 +1,11 @@
 console.log("js loaded")
 
 var url = document.URL
-var button = document.getElementById("continueButton")
+var button
 var selected = 0
 
 window.addEventListener("load", function() {
+    button = document.getElementById("continueButton")
 
     var id = url.split("?")[1]
 
@@ -15,10 +16,12 @@ window.addEventListener("load", function() {
     document.getElementById("text").style.display = "none"
     button.style.width = "100%"
     button.style.height = "500%"
+
+    continueButton()
 })
 
 function continueButton() {
     if (selected == 1) {
-        this.window.open(url.split("?")[0] + 'rolling.mp4')
+        window.location = url.split("?")[0] + 'rolling.mp4'
     }
 }
